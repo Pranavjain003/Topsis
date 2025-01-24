@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
-
+#hi
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './uploads'
 app.config['RESULT_FOLDER'] = './results'
