@@ -29,7 +29,7 @@ A web-based application that implements the **Technique for Order Preference by 
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/TOPSIS-Analysis.git
+   git clone https://github.com/Pranavjain003/Topsis
    cd TOPSIS-Analysis
    ```
 
