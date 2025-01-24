@@ -54,7 +54,7 @@ def submit():
 def send_email(to_email, file_path):
     """Send the result file via email."""
     from_email = 'pjain_be22@thapar.edu'  # Replace with your email
-    password = 'pxtlupnmegwmkgty'     # Replace with your email password
+    password = ''     # Replace with your email password
 
     # Create the email message
     msg = MIMEMultipart()
