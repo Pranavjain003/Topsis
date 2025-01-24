@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPSIS Analysis</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Wrapper for Form */
+        .form-container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            padding: 30px 40px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* Heading Styling */
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        /* Label Styling */
+        label {
+            font-size: 14px;
+            color: #555;
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        /* Input Fields */
+        input[type="file"], 
+        input[type="text"], 
+        input[type="email"], 
+        button {
+            width: 100%;
+            padding: 12px 15px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Input Focus State */
+        input:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 6px rgba(76, 175, 80, 0.5);
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.03);
+        }
+
+        button:active {
+            background-color: #3e8e41;
+        }
+
+        /* Form Spacing */
+        .form-container form {
+            margin-top: 10px;
+        }
+
+        /* File Input Styling */
+        input[type="file"] {
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+
+        /* Footer (Optional) */
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>TOPSIS Analysis Tool</h1>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <label for="file">Upload XLSX File:</label>
+            <input type="file" id="file" name="file" required>
+
+            <label for="weights">Enter Weights (comma-separated):</label>
+            <input type="text" id="weights" name="weights" placeholder="e.g., 1,1,1,1,2" required>
+
+            <label for="impacts">Enter Impacts (comma-separated):</label>
+            <input type="text" id="impacts" name="impacts" placeholder="e.g., +,+,-,+,+" required>
+
+            <label for="email">Enter Your Email ID:</label>
+            <input type="email" id="email" name="email" placeholder="your_email@example.com" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <footer>
+            <p>Powered by TOPSIS | Designed by Pranav Jain</p>
+        </footer>
+    </div>
+</body>
+</html>
